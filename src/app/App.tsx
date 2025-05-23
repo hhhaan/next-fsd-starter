@@ -22,8 +22,8 @@ export default function App({
     children: React.ReactNode;
 }>) {
     return (
-        <html lang="kr" className={`${pretendard.variable}`}>
-            <body className={`${pretendard.className} `}>
+        <html lang="kr">
+            <body className={pretendard.className}>
                 {/* <Provider>{children}</Provider> */}
                 {children}
             </body>
