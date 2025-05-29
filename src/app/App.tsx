@@ -18,13 +18,12 @@ export const metadata: Metadata = {
 
 export const App = ({ children }: { children: React.ReactNode }) => {
     return (
-        <html lang="ko">
+        <html lang="ko" className={pretendard.variable}>
             <head>
                 <link rel="manifest" href="/manifest.json" />
             </head>
-            <body className={`${pretendard.variable} antialiased`}>
+            <body className="font-sans antialiased">
                 {children}
-
                 {/* Google Analytics */}
                 <Script strategy="afterInteractive" src="https://www.googletagmanager.com/gtag/js?id=G-60E91B6QPQ" />
                 <Script id="google-analytics" strategy="afterInteractive">
